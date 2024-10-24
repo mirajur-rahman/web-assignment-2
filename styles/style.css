@@ -63,6 +63,10 @@ header {
   display: flex;
   align-items: center;
   gap: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 5px;
+
 }
 
 .nav-list a {
@@ -96,7 +100,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -308,6 +312,7 @@ header {
 .bmi-chart table {
   border-collapse: collapse;
 }
+
 table {
   margin-top: 50px;
 }
@@ -410,6 +415,7 @@ select {
 
 .meet-img-container img {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .meet-img img {
@@ -417,6 +423,18 @@ select {
   border-radius: 18px;
 }
 
+.name{
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: -70px;
+  margin-left: 20px;
+}
+
+.designation{
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 20px;
+}
 /* Facilities Section Styles  */
 .facilities {
   max-width: 80%;
@@ -470,7 +488,7 @@ select {
   gap: 100px;
 }
 
-.foot-info{
+.foot-info {
   display: flex;
   gap: 150px;
 }
@@ -617,6 +635,10 @@ hr {
   }
 
   /* Meet Section Responsive-------------- */
+  .meet{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
   .meet-img-container {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -633,7 +655,8 @@ hr {
     flex-direction: column;
     gap: 30px;
   }
-  .foot-info{
+
+  .foot-info {
     flex-direction: column;
     gap: 30px;
   }
@@ -641,5 +664,11 @@ hr {
   .get {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #bar {
+    display: none;
   }
 }
